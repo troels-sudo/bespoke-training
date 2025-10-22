@@ -29,11 +29,23 @@
     </section>
 
     <section class="card" style="margin-top:18px">
-      <h2>2) Complete the PAR-Q</h2>
-      <p>Health screening is required before training. It takes 3–5 minutes.</p>
-      <p><a class="btn" href="#" onclick="alert('Replace this link with your PAR-Q form URL');return false;">Open PAR-Q</a></p>
-      <p class="muted" style="color:#9aa2ad">Tip: Use a Google Form or Typeform. We’ll store submissions securely.</p>
-    </section>
+  <h2>2) Complete the PAR-Q</h2>
+  <p>Health screening is required before training. It takes 3–5 minutes.</p>
+  <p>
+    <a
+      class="btn"
+      href="https://docs.google.com/forms/d/e/1FAIpQLSc_AoK5TSIQG-BKw7OyALaJ4FGsq5bOCmxRc_1CrG5frbbs4Q/viewform?usp=sharing&ouid=110928417948590673541"
+      target="_blank"
+      rel="noopener"
+    >
+      Open PAR-Q
+    </a>
+  </p>
+  <p class="muted" style="color:#9aa2ad">
+    Please complete this form before your baseline session. Responses are stored securely and reviewed privately.
+  </p>
+</section>
+
 
     <section class="card" style="margin-top:18px">
       <h2>3) Optional blood panel</h2>
