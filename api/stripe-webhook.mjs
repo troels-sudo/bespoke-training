@@ -8,8 +8,8 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 // TODO: set your two Payment Link IDs here (see Stripe → Payment Links → ID column)
-const DEPOSIT_LINK_ID = "plink_1SKkfxCiITzGGDVEpUt7PuK2";   // AED 1,800
-const PROGRAM_LINK_ID = "plink_1SKkheCiITzGGDVEEWy1BsSg";   // AED 49,000
+const DEPOSIT_LINK_ID = plink_1SKkfxCiITzGGDVEpUt7PuK2;   // AED 1,800
+const PROGRAM_LINK_ID = plink_1SKkheCiITzGGDVEEWy1BsSg;   // AED 49,000
 
 export default async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).end();
