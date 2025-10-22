@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<body style="font-family:Inter,Arial,sans-serif;color:#111;background:#fff;padding:40px;max-width:600px;margin:auto;">
+  <h2 style="color:#0047ff;">Payment confirmed — onboarding</h2>
+  <p>Hi {{first_name}},</p>
+  <p>Your 12-week intensive is confirmed. Start here:</p>
+  <p><a href="https://bespoketrainingdubai.ae/onboarding.html" style="color:#0047ff;">Onboarding Portal</a></p>
+  <ol>
+    <li>Schedule baseline: Calendly link inside</li>
+    <li>Complete PAR-Q form</li>
+    <li>(Optional) Request blood panel</li>
+  </ol>
+  <p>Questions? Reply to this email or WhatsApp +971 50 694 4526.</p>
+  <p>— Bespoke Training Dubai</p>
+</body>
+</html>
