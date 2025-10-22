@@ -1,0 +1,10 @@
+{
+  "name": "bespoke-training",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "stripe": "^16.0.0",
+    "resend": "^4.0.0",
+    "raw-body": "^2.5.2"
+  }
+}
