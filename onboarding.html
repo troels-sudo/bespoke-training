@@ -6,6 +6,17 @@
   <title>Onboarding — Bespoke Training Dubai</title>
   <link rel="stylesheet" href="/luxury.css" />
 </head>
+  <script>
+  const nav = document.querySelector('.nav');
+  const hamburger = document.createElement('div');
+  hamburger.classList.add('hamburger');
+  nav.appendChild(hamburger);
+
+  hamburger.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
+
 <body>
 <div id="header"></div>
 <script>
