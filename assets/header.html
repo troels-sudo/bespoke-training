@@ -1,6 +1,7 @@
 <header class="nav">
   <a href="/" class="brand">Bespoke<span>Training</span>Dubai</a>
   <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+
   <nav class="menu">
     <a href="/method.html">Method</a>
     <a href="/facility.html">Facility</a>
@@ -8,3 +9,12 @@
     <a href="/contact.html" class="cta">Apply</a>
   </nav>
 </header>
+
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.menu');
+  menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('open');
+    document.body.classList.toggle('no-scroll', menu.classList.contains('open'));
+  });
+</script>
