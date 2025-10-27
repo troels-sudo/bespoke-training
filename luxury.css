@@ -68,6 +68,39 @@ a:hover { color: #d5b97d; }
   border: 1px solid var(--accent);
   border-radius: 30px;
 }
+/* --- MOBILE HEADER FIX --- */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .nav .brand {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+  }
+
+  .nav nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .nav nav a {
+    font-size: 1rem;
+    padding: 6px 10px;
+  }
+
+  .nav .cta {
+    border: 1px solid var(--gold);
+    border-radius: 20px;
+    padding: 6px 16px;
+  }
+}
 
 /* Hero section */
 .hero {
