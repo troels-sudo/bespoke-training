@@ -2,89 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Private Executive Personal Training in Dubai Hills | Bespoke Training Dubai</title>
   <meta name="description" content="Exclusive one-to-one performance coaching for executives at Into The Room, Dubai Hills. Precision, privacy, and measurable results." />
   <link rel="canonical" href="https://bespoketrainingdubai.ae/" />
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://bespoketrainingdubai.ae/" />
-  <meta property="og:title" content="Bespoke Training Dubai — Executive Coaching for Performance" />
-  <meta property="og:description" content="Diagnostics-led private coaching for executives. Precision. Structure. Measurable progress." />
-  <meta property="og:image" content="https://bespoketrainingdubai.ae/assets/desktop/hero-desktop.jpg" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Bespoke Training Dubai — Executive Performance Coaching" />
-  <meta name="twitter:description" content="Private one-to-one coaching in Dubai Hills. Designed for results, not trends." />
-  <meta name="twitter:image" content="https://bespoketrainingdubai.ae/assets/desktop/hero-desktop.jpg" />
-
-  <!-- Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Bespoke Training Dubai",
-    "image": "https://bespoketrainingdubai.ae/assets/desktop/hero-desktop.jpg",
-    "url": "https://bespoketrainingdubai.ae",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Dubai Hills",
-      "addressCountry": "AE"
-    },
-    "description": "Exclusive diagnostics-driven executive performance coaching at Into The Room, Dubai Hills."
-  }
-  </script>
-
   <link rel="stylesheet" href="/luxury.css" />
   <link rel="icon" href="/assets/favicon.ico" />
 </head>
-<script>
-  const nav = document.querySelector('.nav');
-  const hamburger = document.createElement('div');
-  hamburger.classList.add('hamburger');
-  nav.appendChild(hamburger);
-
-  hamburger.addEventListener('click', () => {
-    nav.classList.toggle('active');
-  });
-</script>
 
 <body>
-  <!-- Navigation -->
-<div id="header"></div>
-<script>
-  fetch('https://bespoketrainingdubai.ae/assets/header.html')
+  <header class="nav">
+    <a href="/" class="brand">Bespoke<span>Training</span>Dubai</a>
+    <nav>
+      <a href="/method.html">Method</a>
+      <a href="/facility.html">Facility</a>
+      <a href="/faq.html">FAQ</a>
+      <a href="/contact.html" class="cta">Apply</a>
+    </nav>
+    <div class="hamburger"></div>
+  </header>
 
-    .then(r => r.text())
-    .then(html => document.getElementById('header').innerHTML = html);
-</script>
+  <div class="menu-overlay">
+    <a href="/method.html">Method</a>
+    <a href="/facility.html">Facility</a>
+    <a href="/faq.html">FAQ</a>
+    <a href="/contact.html" class="cta">Apply</a>
+  </div>
 
-
-  <!-- Hero -->
   <section class="hero">
-    <div class="hero-copy">
-      <h1>Precision training for high-performing executives</h1>
-      <p>Inside Dubai Hills’ most private facility — where data meets discipline. Structured systems for measurable progress.</p>
-      <div class="hero-cta">
-        <a href="#apply" class="btn btn-primary">Apply Now</a>
-        <a href="/method.html" class="btn btn-outline">See the Method</a>
-      </div>
-      <div class="proof">
-        <div>VO₂ max &amp; DEXA diagnostics</div>
-        <div>Longevity-integrated programming</div>
-        <div>Travel-adaptive protocols</div>
-      </div>
-    </div>
-
-    <picture>
-      <source media="(max-width:1080px)" srcset="/assets/mobile/hero-mobile.jpg">
-      <img src="/assets/desktop/hero-desktop.jpg" alt="Private executive training studio Dubai Hills">
-    </picture>
+    <h1>Precision training for high-performing executives</h1>
+    <p>Inside Dubai Hills’ most exclusive facility — precision coaching built on diagnostics, structure, and measurable results.</p>
+    <a href="/contact.html" class="btn btn-primary">Apply Now</a>
+    <a href="/method.html" class="btn btn-outline">See the Method</a>
   </section>
 
-  <!-- Exclusivity Notice -->
   <section style="text-align:center;padding:60px 40px;background:var(--surface);">
     <h2>Limited Availability — Q1 2025 Cohort</h2>
     <p style="max-width:700px;margin:0 auto;color:var(--muted);">
@@ -93,16 +44,14 @@
     </p>
   </section>
 
-  <!-- Not For Everyone -->
   <section class="grid" style="text-align:center;padding:80px 40px;">
     <h2>This isn’t for everyone.</h2>
     <p style="max-width:700px;margin:20px auto;color:var(--muted);">
-      This program isn’t for those seeking group classes, quick fixes, or trends.
-      It’s designed for executives who treat their body like their business — with structure, precision, and accountability.
+      This program isn’t for those seeking group classes or quick fixes.
+      It’s built for executives who treat their body like their business — with structure, precision, and accountability.
     </p>
   </section>
 
-  <!-- Features -->
   <section class="grid">
     <div class="card">
       <h3>Assessment</h3>
@@ -118,7 +67,6 @@
     </div>
   </section>
 
-  <!-- Founder’s Commitment -->
   <section style="background:var(--surface);padding:100px 40px;text-align:center;">
     <h2>Founder’s Commitment</h2>
     <p style="max-width:700px;margin:20px auto;color:var(--muted);">
@@ -128,76 +76,22 @@
     </p>
   </section>
 
-  <!-- Gallery -->
-  <section class="gallery">
-    <picture>
-      <source media="(max-width:1080px)" srcset="/assets/mobile/facility-1-mobile.jpg">
-      <img src="/assets/desktop/facility-1-desktop.jpg" alt="Strength zone" loading="lazy">
-    </picture>
-    <picture>
-      <source media="(max-width:1080px)" srcset="/assets/mobile/facility-2-mobile.jpg">
-      <img src="/assets/desktop/facility-2-desktop.jpg" alt="Lobby area" loading="lazy">
-    </picture>
-    <picture>
-      <source media="(max-width:1080px)" srcset="/assets/mobile/facility-3-mobile.jpg">
-      <img src="/assets/desktop/facility-3-desktop.jpg" alt="Locker rooms" loading="lazy">
-    </picture>
-  </section>
-
-  <!-- Founder -->
-  <section style="max-width:900px;margin:100px auto;text-align:center;padding:0 40px;">
-    <h2>Founder</h2>
-    <picture>
-      <source media="(max-width:1080px)" srcset="/assets/mobile/troels-mobile.jpg">
-      <img src="/assets/desktop/troels-desktop.jpg" alt="Troels Andersen" style="width:220px;border-radius:50%;margin:20px auto;">
-    </picture>
-    <p style="color:var(--muted);max-width:600px;margin:0 auto;">
-      <strong>Troels Andersen</strong> — Founder &amp; Head Coach.<br>
-      Over a decade coaching executives, entrepreneurs, and athletes.
-      Troels combines diagnostics, longevity science, and precision programming to produce measurable transformation.
-    </p>
-  </section>
-
-  <!-- Apply -->
   <section id="apply" style="max-width:800px;margin:100px auto;padding:0 40px;text-align:center;">
     <h2>Apply for Private Coaching</h2>
-    <p style="color:var(--muted);max-width:700px;margin:0 auto 40px;">
-      Applications are reviewed within 24 hours. Approved clients will receive a secure deposit link to confirm their consultation.
-    </p>
-
-    <form action="https://formspree.io/f/mdkwpkjl" method="POST">
-      <label for="name">Full Name</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Email Address</label>
-      <input type="email" id="email" name="_replyto" required>
-
-      <label for="phone">Phone / WhatsApp</label>
-      <input type="tel" id="phone" name="phone">
-
-      <label for="message">Tell us briefly about your goals and training experience</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-
-      <h3 style="margin-top:40px;">Confirm your readiness</h3>
-      <label><input type="checkbox" required> I can commit to 3–4 sessions per week for 12 weeks.</label><br>
-      <label><input type="checkbox" required> I understand this is an investment starting at AED 49,000.</label><br>
-      <label><input type="checkbox" required> I’m ready to begin within the next 14 days.</label><br>
-      <label><input type="checkbox" required> I value data-driven systems over quick fixes.</label><br><br>
-
-      <button type="submit">Submit Application</button>
+    <form class="readiness" action="https://formspree.io/f/mdkwpkjl" method="POST">
+      <label><input type="checkbox" required> I can commit to 3–4 sessions per week for 12 weeks.</label>
+      <label><input type="checkbox" required> I understand this is an investment starting at AED 49,000.</label>
+      <label><input type="checkbox" required> I’m ready to begin within the next 14 days.</label>
+      <label><input type="checkbox" required> I value data-driven systems over quick fixes.</label><br>
+      <button type="submit" class="btn btn-primary">Submit Application</button>
     </form>
-
-    <p style="color:var(--muted);margin-top:20px;font-size:15px;">
-      By submitting, you agree to our <a href="/privacy.html">Privacy Policy</a>.
-    </p>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <div>© 2025 Bespoke Training Dubai — Into The Room Personal Coaching LLC</div>
-    <div class="foot-links"><a href="/privacy.html">Privacy</a><a href="/contact.html">Contact</a></div>
   </footer>
-  <script src="/assets/schema.js" defer></script>
 
+  <script src="/assets/menu.js"></script>
+  <script src="/assets/schema.js" defer></script>
 </body>
 </html>
