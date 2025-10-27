@@ -43,15 +43,13 @@
 
 <body>
   <!-- Navigation -->
-  <header class="nav">
-    <a href="/" class="brand">Bespoke<span>Training</span>Dubai</a>
-    <nav>
-      <a href="/method.html">Method</a>
-      <a href="/facility.html" style="opacity:1;">Facility</a>
-      <a href="/faq.html">FAQ</a>
-      <a href="/contact.html" class="cta">Apply</a>
-    </nav>
-  </header>
+ <div id="header"></div>
+<script>
+  fetch('/assets/header.html')
+    .then(r => r.text())
+    .then(html => document.getElementById('header').innerHTML = html);
+</script>
+
 
   <!-- Hero -->
   <section class="hero" style="grid-template-columns:1fr;">
