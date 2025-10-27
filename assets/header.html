@@ -1,20 +1,17 @@
-<header class="nav">
-  <a href="/" class="brand">Bespoke<span>Training</span>Dubai</a>
-  <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
-
-  <nav class="menu">
-    <a href="/method.html">Method</a>
-    <a href="/facility.html">Facility</a>
-    <a href="/faq.html">FAQ</a>
-    <a href="/contact.html" class="cta">Apply</a>
-  </nav>
-</header>
-
 <script>
-  const menuToggle = document.querySelector('.menu-toggle');
-  const menu = document.querySelector('.menu');
-  menuToggle.addEventListener('click', () => {
-    menu.classList.toggle('open');
-    document.body.classList.toggle('no-scroll', menu.classList.contains('open'));
-  });
+  fetch('/assets/header.html')
+    .then(r => r.text())
+    .then(html => {
+      document.getElementById('header').innerHTML = html;
+
+      // rebind menu logic after injection
+      const menuToggle = document.querySelector('.menu-toggle');
+      const menu = document.querySelector('.menu');
+      if (menuToggle && menu) {
+        menuToggle.addEventListener('click', () => {
+          menu.classList.toggle('open');
+          document.body.classList.toggle('no-scroll', menu.classList.contains('open'));
+        });
+      }
+    });
 </script>
