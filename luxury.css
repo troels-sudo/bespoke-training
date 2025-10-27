@@ -359,6 +359,7 @@ button[type=submit]:hover { background: #d5b97d; }
     display: none;
   }
 }
+
 /* --- Blurred overlay menu effect --- */
 .menu {
   backdrop-filter: blur(14px);
