@@ -1,12 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://bespoketrainingdubai.ae/</loc></url>
-  <url><loc>https://bespoketrainingdubai.ae/method.html</loc></url>
-  <url><loc>https://bespoketrainingdubai.ae/facility.html</loc></url>
-  <url><loc>https://bespoketrainingdubai.ae/faq.html</loc></url>
-  <url><loc>https://bespoketrainingdubai.ae/contact.html</loc></url>
-  <url><loc>https://bespoketrainingdubai.ae/deposit.html</loc></url>
-  <url><loc>https://bespoketrainingdubai.ae/deposit-success.html</loc></url>
-  <url><loc>https://bespoketrainingdubai.ae/deposit-terms.html</loc></url>
-  <url><loc>https://bespoketrainingdubai.ae/privacy.html</loc></url>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:xhtml="https://www.w3.org/1999/xhtml">
+  
+  <!-- English Pages -->
+  <url>
+    <loc>https://bespoketrainingdubai.ae/</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://bespoketrainingdubai.ae/"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://bespoketrainingdubai.ae/ar/"/>
+    <lastmod>2025-01-01</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://bespoketrainingdubai.ae/method.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://bespoketrainingdubai.ae/method.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://bespoketrainingdubai.ae/ar/method.html"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bespoketrainingdubai.ae/facility.html</loc>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://bespoketrainingdubai.ae/facility.html"/>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://bespoketrainingdubai.ae/ar/facility.html"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bespoketrainingdubai.ae/faq.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bespoketrainingdubai.ae/contact.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bespoketrainingdubai.ae/privacy.html</loc>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Location Pages -->
+  <url>
+    <loc>https://bespoketrainingdubai.ae/locations/dubai-hills.html</loc>
+  </url>
+  <url>
+    <loc>https://bespoketrainingdubai.ae/locations/downtown.html</loc>
+  </url>
+  <url>
+    <loc>https://bespoketrainingdubai.ae/locations/marina.html</loc>
+  </url>
+  <url>
+    <loc>https://bespoketrainingdubai.ae/locations/difc.html</loc>
+  </url>
+  <url>
+    <loc>https://bespoketrainingdubai.ae/locations/palm.html</loc>
+  </url>
+
+  <!-- Arabic Pages -->
+  <url>
+    <loc>https://bespoketrainingdubai.ae/ar/</loc>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://bespoketrainingdubai.ae/ar/"/>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://bespoketrainingdubai.ae/"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://bespoketrainingdubai.ae/ar/method.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://bespoketrainingdubai.ae/ar/method.html"/>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://bespoketrainingdubai.ae/method.html"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bespoketrainingdubai.ae/ar/facility.html</loc>
+    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://bespoketrainingdubai.ae/ar/facility.html"/>
+    <xhtml:link rel="alternate" hreflang="en-AE" href="https://bespoketrainingdubai.ae/facility.html"/>
+    <priority>0.9</priority>
+  </url>
+
 </urlset>
