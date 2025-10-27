@@ -38,6 +38,16 @@
   <link rel="stylesheet" href="/luxury.css" />
   <link rel="icon" href="/assets/favicon.ico" />
 </head>
+<script>
+  const nav = document.querySelector('.nav');
+  const hamburger = document.createElement('div');
+  hamburger.classList.add('hamburger');
+  nav.appendChild(hamburger);
+
+  hamburger.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
 
 <body>
   <!-- Navigation -->
