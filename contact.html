@@ -2,113 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Apply for Private Coaching | Bespoke Training Dubai</title>
   <meta name="description" content="Apply for private executive training at Into The Room, Dubai Hills. Complete your application and secure a refundable consultation deposit." />
   <link rel="canonical" href="https://bespoketrainingdubai.ae/contact.html" />
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://bespoketrainingdubai.ae/contact.html" />
-  <meta property="og:title" content="Apply — Bespoke Training Dubai" />
-  <meta property="og:description" content="Apply for private executive coaching at Into The Room, Dubai Hills." />
-  <meta property="og:image" content="https://bespoketrainingdubai.ae/assets/desktop/hero-desktop.jpg" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Apply — Bespoke Training Dubai" />
-  <meta name="twitter:description" content="Private consultation and application for Bespoke Training Dubai." />
-  <meta name="twitter:image" content="https://bespoketrainingdubai.ae/assets/desktop/hero-desktop.jpg" />
-
-  <!-- Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ContactPage",
-    "url": "https://bespoketrainingdubai.ae/contact.html",
-    "about": "Private consultation and coaching application for Bespoke Training Dubai"
-  }
-  </script>
-
   <link rel="stylesheet" href="/luxury.css" />
   <link rel="icon" href="/assets/favicon.ico" />
 </head>
-<script>
-  const nav = document.querySelector('.nav');
-  const hamburger = document.createElement('div');
-  hamburger.classList.add('hamburger');
-  nav.appendChild(hamburger);
-
-  hamburger.addEventListener('click', () => {
-    nav.classList.toggle('active');
-  });
-</script>
 
 <body>
-  <!-- Navigation -->
-<div id="header"></div>
-<script>
-  fetch('https://bespoketrainingdubai.ae/assets/header.html')
+  <header class="nav">
+    <a href="/" class="brand">Bespoke<span>Training</span>Dubai</a>
+    <nav>
+      <a href="/method.html">Method</a>
+      <a href="/facility.html">Facility</a>
+      <a href="/faq.html">FAQ</a>
+      <a href="/contact.html" class="cta" style="opacity:1;">Apply</a>
+    </nav>
+    <div class="hamburger"></div>
+  </header>
 
-    .then(r => r.text())
-    .then(html => document.getElementById('header').innerHTML = html);
-</script>
+  <div class="menu-overlay">
+    <a href="/method.html">Method</a>
+    <a href="/facility.html">Facility</a>
+    <a href="/faq.html">FAQ</a>
+    <a href="/contact.html" class="cta">Apply</a>
+  </div>
 
-
-  <!-- Hero -->
-  <section class="hero" style="grid-template-columns:1fr;">
-    <div class="hero-copy" style="text-align:center;max-width:800px;margin:auto;">
-      <h1>Apply for Private Coaching</h1>
-      <p>Applications are reviewed within 24 hours. Approved clients receive a secure Stripe link to pay a refundable AED 1,800 deposit to confirm their consultation.</p>
-    </div>
-
-    <picture>
-      <source media="(max-width:1080px)" srcset="/assets/mobile/hero-mobile.jpg">
-      <img src="/assets/desktop/hero-desktop.jpg" alt="Private consultation Bespoke Training Dubai">
-    </picture>
+  <section class="hero">
+    <h1>Apply for Private Coaching</h1>
+    <p>Applications are reviewed within 24 hours. Approved clients receive a secure Stripe link to pay a refundable AED 1 800 deposit to confirm their consultation.</p>
   </section>
 
-  <!-- Application Form -->
   <section style="max-width:800px;margin:80px auto;padding:0 40px;">
     <form action="https://formspree.io/f/mdkwpkjl" method="POST">
-      <label for="name">Full Name</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Email Address</label>
-      <input type="email" id="email" name="_replyto" required>
-
-      <label for="phone">Phone / WhatsApp</label>
-      <input type="tel" id="phone" name="phone">
-
-      <label for="message">Tell us briefly about your goals, schedule, and any prior training experience</label>
-      <textarea id="message" name="message" rows="6" required></textarea>
-
-      <button type="submit">Submit Application</button>
+      <label>Full Name</label><input type="text" name="name" required>
+      <label>Email Address</label><input type="email" name="_replyto" required>
+      <label>Phone / WhatsApp</label><input type="tel" name="phone">
+      <label>Goals and Experience</label><textarea name="message" rows="6" required></textarea>
+      <button type="submit" class="btn btn-primary">Submit Application</button>
     </form>
-
     <p style="color:var(--muted);margin-top:30px;font-size:15px;text-align:center;">
       By submitting, you agree to our <a href="/privacy.html">Privacy Policy</a>.
     </p>
   </section>
 
-  <!-- Payment Section -->
   <section style="text-align:center;padding:100px 40px;background:var(--surface);">
     <h2>Already approved?</h2>
     <p style="color:var(--muted);max-width:600px;margin:20px auto;">
-      If your application has been accepted, reserve your consultation slot securely below.
+      Reserve your consultation slot securely below.
     </p>
-    <a href="https://buy.stripe.com/dRm8wOgSFbwCep26HK4ow00" class="btn btn-primary" target="_blank">Pay AED 1,800 Deposit</a>
+    <a href="https://buy.stripe.com/dRm8wOgSFbwCep26HK4ow00" class="btn btn-primary" target="_blank">Pay AED 1 800 Deposit</a>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <div>© 2025 Bespoke Training Dubai — Into The Room Personal Coaching LLC</div>
-    <div class="foot-links">
-      <a href="/privacy.html">Privacy</a>
-      <a href="/contact.html">Contact</a>
-    </div>
   </footer>
+
+  <script src="/assets/menu.js"></script>
   <script src="/assets/schema.js" defer></script>
 </body>
 </html>
