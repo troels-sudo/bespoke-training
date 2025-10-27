@@ -17,6 +17,9 @@
   --radius: 20px;
   --max: 1200px;
 }
+.no-scroll {
+  overflow: hidden;
+}
 
 /* Reset */
 *,
