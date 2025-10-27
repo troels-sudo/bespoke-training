@@ -366,3 +366,99 @@ button[type=submit]:hover { background: #d5b97d; }
   -webkit-backdrop-filter: blur(14px);
   background-color: rgba(0, 0, 0, 0.75);
 }
+/* --- HEADER + MENU (Luxury Responsive Version) --- */
+.nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  background: var(--black);
+  z-index: 1000;
+}
+
+.nav .brand {
+  font-family: var(--heading);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--gold);
+  text-decoration: none;
+  letter-spacing: 0.3px;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  color: var(--gold);
+  font-size: 1.8rem;
+  cursor: pointer;
+  z-index: 1001;
+  transition: opacity 0.3s ease;
+}
+
+/* --- Overlay Menu --- */
+.menu {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1000;
+}
+
+.menu.open {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.menu a {
+  color: var(--gold);
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin: 12px 0;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: var(--white);
+}
+
+.menu .cta {
+  border: 1px solid var(--gold);
+  border-radius: 24px;
+  padding: 10px 24px;
+  margin-top: 16px;
+}
+
+/* Desktop menu layout */
+@media (min-width: 768px) {
+  .menu {
+    position: static;
+    flex-direction: row;
+    background: transparent;
+    backdrop-filter: none;
+    transform: none;
+    opacity: 1;
+    height: auto;
+  }
+
+  .menu a {
+    font-size: 1rem;
+    margin: 0 12px;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
+}
