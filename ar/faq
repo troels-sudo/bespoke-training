@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>الأسئلة الشائعة | بيسبوك ترينينغ دبي</title>
+  <meta name="description" content="الأسئلة الأكثر شيوعًا حول بيسبوك ترينينغ دبي — تفاصيل البرامج، الخصوصية، وهيكل التدريب.">
+  <link rel="icon" href="/assets/favicon.ico">
+  <link rel="stylesheet" href="/luxury.css">
+</head>
+<body>
+<header class="nav">
+  <a href="/ar/" class="brand">بيسبوك<span>ترينينغ</span>دبي</a>
+  <nav>
+    <a href="/ar/method.html">المنهج</a>
+    <a href="/ar/facility.html">المنشأة</a>
+    <a href="/ar/faq.html" class="active">الأسئلة</a>
+    <a href="/contact.html" class="cta">التقديم</a>
+    <a href="/faq.html" class="lang-toggle">English</a>
+  </nav>
+  <div class="hamburger"></div>
+</header>
+
+<div class="menu-overlay">
+  <a href="/ar/method.html">المنهج</a>
+  <a href="/ar/facility.html">المنشأة</a>
+  <a href="/ar/faq.html">الأسئلة</a>
+  <a href="/contact.html" class="cta">التقديم</a>
+  <a href="/faq.html" class="lang-toggle">English</a>
+</div>
+
+<section class="hero new-hero" style="background-image:url('/assets/desktop/facility-5-desktop.jpg')">
+  <div class="overlay"></div>
+  <div class="hero-inner">
+    <h1>الأسئلة الشائعة</h1>
+    <p>إجابات واضحة ومباشرة على أهم الأسئلة.</p>
+  </div>
+</section>
+
+<section class="faq">
+  <details><summary>كم تستمر كل دورة تدريبية؟</summary><p>تستمر كل دورة لمدة 12 أسبوعًا مع إمكانية الاستمرار في دورات متقدمة.</p></details>
+  <details><summary>لمن تم تصميم هذه البرامج؟</summary><p>للأشخاص التنفيذيين ورواد الأعمال والمهنيين الذين يبحثون عن هيكل وانضباط ونتائج قابلة للقياس.</p></details>
+  <details><summary>أين تُقام الجلسات؟</summary><p>داخل منشأة إنتو ذا روم في دبي هيلز أو في المنزل ضمن مناطق محددة.</p></details>
+  <details><summary>هل يشمل البرنامج دعمًا غذائيًا؟</summary><p>نعم، كل برنامج يتضمن خطة تغذية تتماشى مع أهداف التدريب.</p></details>
+  <details><summary>ما مدى الخصوصية؟</summary><p>الجلسات خاصة تمامًا — عميل واحد في كل ساعة بدون مشاركة المكان.</p></details>
+</section>
+
+<footer class="footer">© 2025 بيسبوك ترينينغ دبي — إنتو ذا روم بيرسونال كوتشنغ ذ.م.م.</footer>
+<script src="/assets/menu.js"></script>
+</body>
+</html>
