@@ -1,156 +1,54 @@
-/* --- Global Reset --- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: 'Inter', 'Playfair Display', serif;
-  background-color: #0e0e0e;
-  color: #f0f0f0;
-  line-height: 1.6;
-}
-h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
-  color: #fff;
-  margin-bottom: 12px;
-}
-p { color: #b5b5b5; margin-bottom: 20px; }
-.menu-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(10,10,10,0.96);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.4s ease;
-  z-index: 9999;
-}
-.menu-overlay.open { opacity: 1; pointer-events: auto; }
-.menu-overlay a { font-size: 1.8rem; color: #fff; margin: 12px 0; text-decoration: none; }
-.menu-overlay a:hover { color: #c5a25b; }
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Inter','Playfair Display',serif;background:#0e0e0e;color:#f0f0f0;line-height:1.6;}
+h1,h2,h3{font-family:'Playfair Display',serif;color:#fff;margin-bottom:12px;}
+p{color:#b5b5b5;margin-bottom:20px;}
 
-/* --- Hero --- */
-.hero {
-  background-size: cover;
-  background-position: center;
-  padding: 180px 20px 120px;
-  text-align: center;
-  position: relative;
-}
-.hero-inner { max-width: 800px; margin: auto; }
-.hero-inner h1 { font-size: 2.6rem; margin-bottom: 20px; }
-.hero-inner p { font-size: 1.1rem; margin-bottom: 30px; color: #ccc; }
+/* Header */
+.nav{display:flex;justify-content:space-between;align-items:center;padding:24px 60px;border-bottom:1px solid rgba(255,255,255,.05);}
+.brand{color:#c5a25b;font-size:1.8rem;font-family:'Playfair Display',serif;}
+.nav nav{display:flex;gap:40px;}
+.nav nav a{color:#c5a25b;text-decoration:none;}
+.nav .cta{border:1px solid #c5a25b;border-radius:24px;padding:8px 20px;}
+.hamburger{display:none;width:22px;height:2px;background:#c5a25b;position:relative;}
+.hamburger::before,.hamburger::after{content:"";position:absolute;width:22px;height:2px;background:#c5a25b;left:0;}
+.hamburger::before{top:-6px}.hamburger::after{top:6px}
+.menu-overlay{position:fixed;inset:0;background:rgba(10,10,10,.96);display:flex;flex-direction:column;justify-content:center;align-items:center;opacity:0;pointer-events:none;transition:opacity .4s ease;z-index:9999;}
+.menu-overlay.open{opacity:1;pointer-events:auto;}
+.menu-overlay a{font-size:1.6rem;color:#fff;margin:12px 0;}
+@media(max-width:900px){.nav{flex-direction:column;padding:20px 24px}.nav nav{display:none}.hamburger{display:block;margin-top:8px}}
 
-.hero-buttons { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+/* Hero */
+.hero{background-size:cover;background-position:center;padding:160px 20px 120px;text-align:center;position:relative;}
+.hero-inner{max-width:800px;margin:auto;}
+.hero-inner h1{font-size:2.6rem;margin-bottom:20px;}
+.hero-inner p{font-size:1.1rem;margin-bottom:30px;color:#ccc;}
+.hero-buttons{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;}
 
-/* --- Buttons --- */
-.btn {
-  display: inline-block;
-  padding: 14px 32px;
-  border-radius: 50px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-.btn-primary {
-  background-color: #c5a25b;
-  color: #0e0e0e;
-  border: none;
-}
-.btn-primary:hover { background-color: #d4b46e; }
-.btn-outline {
-  border: 2px solid #c5a25b;
-  color: #c5a25b;
-}
-.btn-outline:hover { background-color: #c5a25b; color: #0e0e0e; }
+/* Buttons */
+.btn{display:inline-block;padding:14px 32px;border-radius:50px;font-weight:600;text-decoration:none;transition:all .3s ease;}
+.btn-primary{background:#c5a25b;color:#0e0e0e;}
+.btn-primary:hover{background:#d4b46e;}
+.btn-outline{border:2px solid #c5a25b;color:#c5a25b;}
+.btn-outline:hover{background:#c5a25b;color:#0e0e0e;}
 
-/* --- Apply Form --- */
-.apply-section {
-  max-width: 780px;
-  margin: 100px auto;
-  padding: 40px;
-}
-.apply-form {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-.form-row { flex: 1 1 45%; display: flex; flex-direction: column; }
-.form-row.full { flex: 1 1 100%; }
-label { color: #b0b0b0; margin-bottom: 8px; }
-input, textarea {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.08);
-  color: #fff;
-  padding: 12px;
-  border-radius: 4px;
-  font-size: 1rem;
-}
-input:focus, textarea:focus { outline: none; border-color: #c5a25b; }
-.btn.full { width: 100%; margin-top: 16px; }
+/* Apply Form */
+.apply-section{max-width:780px;margin:100px auto;padding:40px;}
+.apply-form{display:flex;flex-wrap:wrap;gap:20px;}
+.form-row{flex:1 1 45%;display:flex;flex-direction:column;}
+.form-row.full{flex:1 1 100%;}
+label{color:#b0b0b0;margin-bottom:8px;}
+input,textarea{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);color:#fff;padding:12px;border-radius:4px;font-size:1rem;}
+input:focus,textarea:focus{outline:none;border-color:#c5a25b;}
+.btn.full{width:100%;margin-top:16px;}
 
-/* --- Founder Section --- */
-.founder-photo {
-  text-align: center;
-  margin-top: 40px;
-}
-.founder-photo img {
-  max-width: 260px;
-  border-radius: 50%;
-  border: 2px solid rgba(255,255,255,0.1);
-}
-.founder-photo p {
-  margin-top: 14px;
-  color: #ddd;
-  font-size: 0.95rem;
-}
+/* Founder */
+.founder-photo{text-align:center;margin-top:40px;}
+.founder-photo img{max-width:260px;border-radius:50%;border:2px solid rgba(255,255,255,.1);}
+.founder-photo p{margin-top:14px;color:#ddd;font-size:.95rem;}
 
-/* --- Footer --- */
-.footer {
-  text-align: center;
-  padding: 50px 20px;
-  color: #777;
-  border-top: 1px solid rgba(255,255,255,0.05);
-  font-size: 0.9rem;
-}
-/* =====================================
-   FADE-IN + SLIDE-UP ANIMATIONS
-   ===================================== */
-@keyframes fadeSlideUp {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+/* Footer */
+.footer{text-align:center;padding:50px 20px;color:#777;border-top:1px solid rgba(255,255,255,.05);font-size:.9rem;}
 
-/* Trigger for all visible sections */
-section, .split, .apply-section, .founder-photo {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-/* When visible in viewport */
-section.visible, .split.visible, .apply-section.visible, .founder-photo.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Smoother stagger for cards and grid items */
-.card {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-.card.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+/* Fade Animations */
+@keyframes fadeSlideUp{0%{opacity:0;transform:translateY(30px);}100%{opacity:1;transform:translateY(0);}}
+section.visible,.founder-photo.visible{opacity:1!important;transform:none!important;}
