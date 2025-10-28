@@ -1,9 +1,10 @@
-// menu.js — handles overlay and scroll lock
-const nav = document.querySelector('.nav');
-const burger = document.querySelector('.hamburger');
-const overlay = document.querySelector('.menu-overlay');
-burger.addEventListener('click', () => {
-  nav.classList.toggle('active');
-  overlay.classList.toggle('active');
-  document.body.style.overflow = overlay.classList.contains('active') ? 'hidden' : '';
+const menuBtn = document.querySelector(".hamburger");
+const menuOverlay = document.querySelector(".menu-overlay");
+
+menuBtn.addEventListener("click", () => {
+  menuOverlay.classList.toggle("open");
+});
+
+document.querySelectorAll(".menu-overlay a").forEach(link => {
+  link.addEventListener("click", () => menuOverlay.classList.remove("open"));
 });
