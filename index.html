@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bespoke Training Dubai | Precision Coaching for Executives</title>
-  <meta name="description" content="Exclusive executive personal training at Dubai Hills — precision systems built on diagnostics, structure, and measurable progress.">
+  <meta name="description" content="Executive personal training at Dubai Hills — diagnostics-driven systems for measurable performance.">
 
   <meta property="og:title" content="Bespoke Training Dubai | Precision Coaching for Executives">
   <meta property="og:description" content="Private executive personal training built on diagnostics, structure, and measurable progress.">
@@ -58,9 +58,14 @@
   </div>
 </section>
 
-<footer class="footer">
-  © 2025 Bespoke Training Dubai — Into The Room Personal Coaching LLC
-</footer>
+<footer class="footer">© 2025 Bespoke Training Dubai — Into The Room Personal Coaching LLC</footer>
+
 <script src="/assets/menu.js"></script>
+<script>
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});
+},{threshold:0.2});
+document.querySelectorAll('section, .founder-photo').forEach(el=>observer.observe(el));
+</script>
 </body>
 </html>
